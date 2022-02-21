@@ -1,0 +1,3 @@
+{
+  "extends": ["@med-app/eslint-config"]
+}
