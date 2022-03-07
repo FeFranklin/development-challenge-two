@@ -21,7 +21,15 @@
 <div align="center">
   <img width="500" height="500" src="https://imgur.com/nmebLXv.jpeg" alt="patient register app">
 </div>
-<!-- TODO -->
+
+The project is a development challenge of MedCloudBr. A patient register UI with CRUD operations. Firstly, I built the fronted as I imagined it would be easy to use.
+Simple TextFields and a button to register the patient. After that, I felt the need to show the user the operation was successfull which made me add some notifications
+components. All the components created and implemented use MaterialUI as foundation. The larger components and operations are split for better readability.
+
+The project was interesting to build because
+* Implement and add features as the UI is composed based on the needs
+* Fun to play around MaterialUI components and improve them
+* Writing CRUD operations as efficient as possible
 
 ### Built With
 
@@ -70,6 +78,11 @@ The app can be used to register, search, update and delete a patient. The operat
 ### Searching
 <div align="center">
   <img width="500" height="500" src="https://imgur.com/s0K1Ig1.gif" alt="patient register app">
+</div>
+
+### Updating
+<div align="center">
+  <img width="500" height="500" src="https://imgur.com/OFebrxY.gif" alt="patient register app">
 </div>
 
 ### Deleting
