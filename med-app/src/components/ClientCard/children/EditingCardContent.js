@@ -1,46 +1,19 @@
-import React, { useState } from 'react';
-import { CardContent, TextField } from '@mui/material';
+import React from 'react';
+import { CardContent, TextField, Typography } from '@mui/material';
 
-const EditingCardContent = ({ client }) => {
-  const [name, setName] = useState(client?.name || '');
-  const [birth, setBirth] = useState(client?.birth || '');
-  const [email, setEmail] = useState(client?.email || '');
-  const [addr, setAddr] = useState(client?.addr || '');
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleBirthChange = (e) => {
-    setBirth(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleAddrChange = (e) => {
-    setAddr(e.target.value);
-  };
-
+const EditingCardContent = ({ client, addr, handleAddrChange, birth, handleBirthChange }) => {
+  
   return (
     <CardContent>
-      <TextField
-        margin="normal"
-        label="Name"
-        variant="outlined"
-        value={name}
-        size="small"
-        onChange={handleNameChange}
-      />
-      <TextField
-        margin="normal"
-        label="Email"
-        variant="outlined"
-        value={email}
-        size="small"
-        onChange={handleEmailChange}
-      />
+      <Typography variant="h5" component="div">
+        {client?.name || 'name of client'}
+      </Typography>
+      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        {client?.id || 'client id'}
+      </Typography>
+      <Typography variant="body2">
+        Email: {client?.email}
+      </Typography>
       <TextField
         margin="normal"
         label="Date of Birth"

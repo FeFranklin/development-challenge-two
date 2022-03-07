@@ -6,8 +6,20 @@ import CustomCardContent from './children/CustomCardContent';
 import { API } from 'aws-amplify';
 
 const ClientCard = ({ client }) => {
+  const { name, email, addr, birth } = client;
   const [editing, setEditing] = useState(false);
-  const { name, email, addr, birth, id } = client;
+  const [birthField, setBirthField] = useState(birth || '');
+  const [addrField, setAddrField] = useState(addr || '');
+
+  const handleBirthChange = (e) => {
+    setBirthField(e.target.value);
+  };
+
+  const handleAddrChange = (e) => {
+    setAddrField(e.target.value);
+  };
+
+  
   const apiName = 'medapi';
   const path = '/clients';
 
@@ -16,9 +28,8 @@ const ClientCard = ({ client }) => {
       body: {
         name: name,
         email: email,
-        addr: addr,
-        birth: birth,
-        id: id,
+        addr: addrField,
+        birth: birthField,
       }
     }
 
@@ -35,11 +46,26 @@ const ClientCard = ({ client }) => {
     }
   }
 
+  const handleCancelEditing = () => {
+    setEditing(false);
+  }
+
   return (
     <Card sx={{ minWidth: 275 }} className='card__container'>
-      {editing ? <EditingCardContent client={client} /> : <CustomCardContent client={client} />}
+      {editing ? (
+          <EditingCardContent
+            birth={birthField}
+            handleBirthChange={handleBirthChange}
+            addr={addrField}
+            handleAddrChange={handleAddrChange}
+            client={client}
+          />
+        ) : (
+          <CustomCardContent client={client} />
+        )}
       <CardActions>
         <Button size="small" onClick={handleEditing}>{editing? 'Save' : 'Edit'}</Button>
+        {editing && <Button size="small" onClick={handleCancelEditing}>Cancel</Button>}
       </CardActions>
     </Card>
   );

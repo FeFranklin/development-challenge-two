@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CardContent, Typography } from '@mui/material';
 
 const CustomCardContent = ({ client }) => {
@@ -11,9 +11,9 @@ const CustomCardContent = ({ client }) => {
         {client?.id || 'client id'}
       </Typography>
       <Typography variant="body2">
-        Address: {client?.addr}
-        <br />
         Email: {client?.email}
+        <br />
+        Address: {client?.addr}
         <br />
         Date of birth: {client?.birth}
       </Typography>

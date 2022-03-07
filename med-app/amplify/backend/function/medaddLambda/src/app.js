@@ -89,28 +89,28 @@ app.get(path + '/:name/:email', function(req, res) {
 *************************************/
 
 app.put(path, function(req, res) {
-  let putItemParams = {
+  let params = {
     TableName: tableName,
-    Item: {
-      ...req.body,
-    },
+    // Item: {
+    //   ...req.body,
+    // },
     Key: {
       name: req.body.name,
       email: req.body.email,
     },
-    UpdateExpression: "set #name=:name, email=:email, addr=:addr, brith=:brith",
-    ExpressionAttributeNames: { '#name': 'name' },
+    UpdateExpression: "set addr=:addr, birth=:birth",
+    // ExpressionAttributeNames: { '#name': 'name' },
     ExpressionAttributeValues:{
-      ":name": req.body.name,
-      ":email": req.body.email,
+      // ":name": req.body.name,
+      // ":email": req.body.email,
       ":addr": req.body.addr,
-      ":brith": req.body.brith,
+      ":birth": req.body.birth,
     },
-    ReturnValues: 'ALL_OLD',
-    ConditionExpression: 'attribute_exists(birth) AND attribute_exists(#name) AND attribute_exists(email) AND attribute_exists(addr)',
+    ReturnValues: 'UPDATED_NEW',
+    // ConditionExpression: 'attribute_exists(birth) AND attribute_exists(#name) AND attribute_exists(email) AND attribute_exists(addr)',
   }
 
-  dynamodb.put(putItemParams, (err, data) => {
+  dynamodb.update(params, (err, data) => {
     if (err) {
       res.statusCode = 500;
       res.json({ error: err, url: req.url, body: req.body });

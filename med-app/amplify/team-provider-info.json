@@ -15,7 +15,7 @@
       "function": {
         "medaddLambda": {
           "deploymentBucketName": "amplify-medapp-dev-220809-deployment",
-          "s3Key": "amplify-builds/medaddLambda-3268356a387236344e4d-build.zip"
+          "s3Key": "amplify-builds/medaddLambda-4e6c504636727946766c-build.zip"
         }
       },
       "hosting": {
