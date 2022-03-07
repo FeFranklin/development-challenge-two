@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/clients": {
+      "name": "/clients",
+      "lambdaFunction": "medaddLambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
