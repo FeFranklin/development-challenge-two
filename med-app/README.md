@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img  alt="Logo" width="80" height="80" src="https://img.icons8.com/color/48/000000/hospital-3.png"/>
+  </a>
 
-## Available Scripts
+  <h3 align="center">MedCloud development challenge</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    Patient register UI built with React
+    <br />
+    <a href="https://dev.d1grfxsg7kthpl.amplifyapp.com/">View Demo</a>
+  </p>
+</div>
 
-### `npm start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
+<div align="center">
+  <img width="500" height="500" src="https://imgur.com/nmebLXv.jpeg" alt="patient register app">
+</div>
+<!-- TODO -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tech stack used in this project:
 
-### `npm test`
+* [React.js](https://reactjs.org/)
+* [Amplify](https://aws.amazon.com/amplify/)
+* [DynamoDB](https://aws.amazon.com/dynamodb/)
+* [MaterialUI](https://mui.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<!-- GETTING STARTED -->
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The backend is running on the AWS cloud. The frontend can be run locally. Follow the steps in order to run the project locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/FeFranklin/development-challenge-two.git
+   ```
+2. cd into the med-app folder
+    ```sh
+    cd med-app
+    ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start frontend locally with
+   ```sh
+   npm start
+   ```
 
-### `npm run eject`
+<!-- USAGE EXAMPLES -->
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app can be used to register, search, update and delete a patient. The operations are demonstrated with the gifs below:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Registering
+<div align="center">
+  <img width="500" height="500" src="https://imgur.com/wKoqOPU.gif" alt="patient register app">
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Searching
+<div align="center">
+  <img width="500" height="500" src="https://imgur.com/s0K1Ig1.gif" alt="patient register app">
+</div>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Deleting
+<div align="center">
+  <img width="500" height="500" src="https://imgur.com/akNShl2.gif" alt="patient register app">
+</div>
 
-## Learn More
+<!-- CONTACT -->
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Felipe Franklin - felipelfbezerra54@gmail.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Project Link: [https://github.com/FeFranklin/development-challenge-two](https://github.com/FeFranklin/development-challenge-two)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#top">back to top</a>)</p>
