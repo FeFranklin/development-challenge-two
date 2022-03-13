@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://dev.d1grfxsg7kthpl.amplifyapp.com/">
     <img  alt="Logo" width="80" height="80" src="https://img.icons8.com/color/48/000000/hospital-3.png"/>
   </a>
 
